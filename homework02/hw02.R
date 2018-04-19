@@ -39,5 +39,6 @@ pred_step = predict(step_lr, tst_data)
 mse_step = mean((tst_data$Price-pred_step)^2)
 
 par(mfrow=c(1,2))
-plot(tst_data$Price, pred_step)
 plot(tst_data$Price, pred_lr)
+plot(tst_data$Price, pred_step)
+
